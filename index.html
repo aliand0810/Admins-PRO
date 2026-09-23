@@ -435,9 +435,15 @@
         <button class="deploy-toggle-btn" id="btn-admin-sec-8" onclick="event.stopPropagation();toggleAdminSection('admin-sec-8')"><span class="arrow">▼</span> <span class="btn-label">Déployer</span></button>
     </div>
     <div class="admin-section-body" id="admin-sec-8">
-        <div class="af-info-box">ℹ️ Sauvegarde Drive standard (identique aux autres modules). Le moteur avancé de rotation/restauration locale (fichiers système) reste disponible uniquement dans COVO Pro.
-            <div style="margin-top:8px;"><a href="https://aliand0810.github.io/Covo-pro/#admin-local" target="covopro" style="display:inline-block;background:#2980b9;color:#fff;text-decoration:none;padding:7px 14px;border-radius:8px;font-weight:700;font-size:0.82rem;">🛠️ Ouvrir l'outil de sauvegarde avancé (COVO Pro)</a></div>
+        <div style="background:linear-gradient(135deg,#eaf4fc,#dbe9f7);border:2px solid #2980b9;border-radius:12px;padding:14px 16px;margin-bottom:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+            <div style="font-size:1.8rem;flex-shrink:0;">🧹</div>
+            <div style="flex:1;min-width:220px;">
+                <div style="font-weight:900;color:#1c5a85;font-size:0.95rem;">Nettoyage &amp; rotation des sauvegardes Google Drive</div>
+                <div style="font-size:0.8rem;color:#3a3a3a;margin-top:2px;">Supprime automatiquement les sauvegardes trop anciennes selon la durée de rétention choisie (un nombre minimum de sauvegardes récentes est toujours conservé). L'outil complet — scan avant nettoyage, nettoyage manuel, historique — se trouve dans COVO Pro ; ce bouton l'ouvre directement à la bonne section.</div>
+            </div>
+            <a href="https://aliand0810.github.io/Covo-pro/#admin-local" target="covopro" style="display:inline-block;background:#2980b9;color:#fff;text-decoration:none;padding:11px 22px;border-radius:10px;font-weight:800;font-size:0.88rem;white-space:nowrap;box-shadow:0 3px 10px rgba(41,128,185,0.35);flex-shrink:0;">🧹 Ouvrir le nettoyage Google Drive</a>
         </div>
+        <div class="af-info-box">ℹ️ Sauvegarde Drive standard (identique aux autres modules). Le moteur avancé de rotation/restauration locale (fichiers système) reste disponible uniquement dans COVO Pro.</div>
         <div class="af-field">
             <label class="af-label">Client ID Google (partagé avec COVO Pro)</label>
             <div style="display:flex;gap:8px;flex-wrap:wrap;">
@@ -462,7 +468,7 @@
         <button class="deploy-toggle-btn" id="btn-admin-sec-10-body" onclick="event.stopPropagation();toggleAdminSection('admin-sec-10-body')"><span class="arrow">▼</span> <span class="btn-label">Déployer</span></button>
     </div>
     <div class="admin-section-body" id="admin-sec-10-body">
-        <div class="af-note" style="margin-top:-4px;">Réglages purement déclaratifs (clé partagée <code>gdrive_backup_config</code>) : ils pilotent le moteur de sauvegarde de COVO Pro, pas un moteur propre à Admin Pro.</div>
+        <div class="af-note" style="margin-top:-4px;">Réglages purement déclaratifs (clé partagée <code>gdrive_backup_config</code>) : ils pilotent le moteur de sauvegarde de COVO Pro, pas un moteur propre à Admin Pro. Pour nettoyer manuellement les anciennes sauvegardes Drive (ou juste prévisualiser ce qui serait supprimé), voir le bouton « 🧹 Nettoyage &amp; rotation des sauvegardes Google Drive » dans la section « 💾 Sauvegarde &amp; Restaurer » ci-dessus.</div>
         <div class="af-field">
             <label class="af-label">Modèle de rangement Drive</label>
             <div id="adm-bkp-model-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
