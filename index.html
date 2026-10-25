@@ -2758,7 +2758,7 @@ window._admBkpSaveRoot = function() {
     var isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
     var _cpWasInstalled = false;
     try { _cpWasInstalled = localStorage.getItem('covo_pwa_installed_adminpro') === '1'; } catch(e) {}
-    if (isStandalone) { try { localStorage.setItem('covo_pwa_installed_adminpro', '1'); } catch(e) {} }
+    if (isStandalone) { try { localStorage.setItem('covo_pwa_installed_adminpro', '1'); localStorage.setItem('covo_pwa_proto_adminpro', '1'); } catch(e) {} }
     if (btn) btn.style.display = (isStandalone || _cpWasInstalled) ? 'none' : '';
     window.addEventListener('beforeinstallprompt', function(e) {
         e.preventDefault();
